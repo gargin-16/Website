@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="https://t3.ftcdn.net/jpg/03/86/54/20/360_F_386542052_n1aGOxLLvnOk1PIAXllnfWIFrFnod9NH.jpg">
+    <link rel="stylesheet" href="contact.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand squared-border"><i>Casa<br>Nova</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="port.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><hr>
+      <div class="contact-form text-center">
+        <h1>
+         BE IN <br> TOUCH
+        </h1>
+        <form>
+         <div class="row mb-3">
+          <div class="col-md-6">
+           <label class="form-label" for="firstName">
+            First Name :
+           </label>
+           <input class="form-control" id="firstName" required pattern="[A-Za-z]+" title="First name should only contain letters." type="text"/>
+          </div>
+          <div class="col-md-6">
+           <label class="form-label" for="lastName">
+            Last Name :
+           </label>
+           <input class="form-control" id="lastName" required pattern="[A-Za-z]+" title="Last name should only contain letters." type="text"/>
+          </div>
+         </div>
+         <div class="mb-3">
+          <label class="form-label" for="email">
+           Email :
+          </label>
+          <input class="form-control" id="email" required oninput="validateForm()" type="email"/>
+          <div id="emailHelp" class="form-text text-danger">
+         </div>
+         <div class="mb-3">
+          <label class="form-label" for="subject">
+           Subject :
+          </label>
+          <input class="form-control" id="subject" required="" type="text"/>
+         </div>
+         <div class="mb-3">
+          <label class="form-label" for="message">
+           Message :
+          </label>
+          <textarea class="form-control" id="message" required maxlength="250" title="Message should not exceed 250 characters rows="3"></textarea>
+         </div>
+         <button class="btn btn-secondary" type="button" onclick="myFunction()">Submit</button>
+        </div>
+        </form>
+       </div>
+       <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=jurong east&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://sprunkiplay.com">Sprunki</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+
+       <div class="footer text-center">
+        <div class="container-contact">
+         <div class="row">
+          <div class="col-md-6 text-md-start">
+           <p class="be-in-touch">
+           <a href="contact.html"> BE IN<br> TOUCH</a>
+           </p>
+          </div>
+          <div class="col-md-6 text-md-end contact-info">
+           <p class="text-white">
+            500 Terry Francine St San Francisco, CA 94158
+           </p>
+           <p class="text-white">
+            Tel 123-456-7890, Fax 123-456-7890
+           </p>
+           <p class="text-white">
+            © 2035 by Architects. Powered and secured by XYZ.
+           </p>
+           <div class="social-icons">
+            <a href="https://www.facebook.com/">
+             <i class="fa-brands fa-facebook-f">
+             </i>
+            </a>
+            <a href="https://x.com/?lang=en&mx=2">
+             <i class="fa-brands fa-twitter">
+             </i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+             <i class="fa-brands fa-instagram">
+             </i>
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script>
+        function validateForm() {
+           // Email validation
+        const email = document.getElementById('email').value;
+        const emailHelp = document.getElementById('emailHelp');
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        
+        if (!email.match(emailPattern)) {
+          emailHelp.textContent = "Please enter a valid email address.";
+          isValid = false;
+        } else {
+          emailHelp.textContent = "";
+        }
+        }
+          let isValid = true;
+        function myFunction() {
+          // Get form field values
+          var firstName = document.getElementById("firstName").value;
+          var lastName = document.getElementById("lastName").value;
+          var subject = document.getElementById("subject").value;
+          var message = document.getElementById("message").value;
+
+          // Validate if any field is empty
+          if (firstName === "" || lastName === "" || email === "" || subject === "" || message === "") {
+            alert("Please fill in all the information.");
+          } else {
+            // Display the submitted details in an alert
+            alert("Submitted successfully!\n\n" +
+                  "First Name: " + firstName + "\n" +
+                  "Last Name: " + lastName + "\n" +
+                  "Email: " + email + "\n" +
+                  "Subject: " + subject + "\n" +
+                  "Message: " + message);
+          }
+        }
+      </script>
+    </body>
+  </html>
